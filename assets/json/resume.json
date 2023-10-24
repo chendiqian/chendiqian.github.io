@@ -29,8 +29,11 @@
       "url": "https://www.iks.fraunhofer.de/",
       "startDate": "2021-03",
       "endDate": "2021-08",
-      "summary": "Conducted a wide literature survey of state-of-the-art OOD detection methods. Implemented different methods with Pytorch and analyzed the performance. Investigated shortcomings of unsupervised methods.",
+      "summary": "",
       "highlights": [
+        "Literature survey of OOD detection methods",
+        "Implementation of different methods with Pytorch",
+        "Investigation in shortcomings of unsupervised methods"
       ]
     },
     {
@@ -39,8 +42,11 @@
       "url": "https://www.tum.de/en/",
       "startDate": "2020-05",
       "endDate": "2022-03",
-      "summary": "Worked for courses Techniques in Artificial Intelligence, Introduction to Deep Learning, and Machine Learning. Designed programming tasks for students which cover wide topics such as back-propagation, logic solvers.",
+      "summary": "",
       "highlights": [
+        "Techniques in Artificial Intelligence, Introduction to Deep Learning, Machine Learning",
+        "Programming tasks for students",
+        "Back-propagation, logic solvers"
       ]
     }
   ],
@@ -166,5 +172,30 @@
   ],
   "interests": [],
   "references": [],
-  "projects": []
+  "projects": [
+    {
+      "startDate": "2019-02",
+      "endDate": "2019-06",
+      "name": "Bachelor Thesis: Intelligent Scheduling and Path Planning for Multi-robot System",
+      "highlights": [
+        "Multi-robot collision-free path planning",
+        "Amazon warehouse",
+        "Integer Linear Programming",
+        "MATLAB & Gurobi"
+      ],
+      "url": "https://github.com/chendiqian/Bachelor_Thesis"
+    },
+    {
+      "startDate": "2021-10",
+      "endDate": "2022-06",
+      "name": "Master Thesis: Solving Schrodinger Equations with Neural Networks",
+      "highlights": [
+        "Better, faster trial wave functions",
+        "Variational Monte Carlo",
+        "Quantum physics",
+        "Jax deep learning framework"
+      ],
+      "url": "https://github.com/chendiqian/Master-Thesis"
+    }
+  ]
 }
