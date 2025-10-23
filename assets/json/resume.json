@@ -91,6 +91,12 @@
   ],
   "awards": [
     {
+      "title": "Top reviewer award of NeurIPS 2025",
+      "date": "2025-10",
+      "awarder": "NeurIPS Conference",
+      "summary": "Awarded as a NeurIPS 2025 'Top Reviewer' for providing exceptionally insightful, high-quality, and constructive peer reviews."
+    },
+    {
       "title": "Deutschlandstipendium / German National Scholarship",
       "date": "2020-10",
       "awarder": "Technical University of Munich",
