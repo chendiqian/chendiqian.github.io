@@ -5,7 +5,7 @@ layout: default
 <!-- about.html -->
       <div class="post about-page">
         <header class="post-header">
-          <p class="profile-eyebrow">Graph machine learning &amp; optimization</p>
+          {% if page.eyebrow %}<p class="profile-eyebrow">{{ page.eyebrow | escape }}</p>{% endif %}
           <h1 class="post-title">
             {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
@@ -47,13 +47,7 @@ layout: default
             </nav>
           </div>
 
-          <section class="recent-updates" aria-labelledby="updates-title">
-            <h2 id="updates-title">Recent highlights</h2>
-            <ul>
-              <li><span class="update-date">2026</span><span>Our paper <a href="https://arxiv.org/abs/2605.07113">Solving Max-Cut to Global Optimality via Feasibility-Preserving Graph Neural Networks</a> was accepted at <strong>NeurIPS 2026</strong>.</span></li>
-              <li><span class="update-date">April 2026</span><span>Awarded <strong>Gold Reviewer</strong> at NeurIPS 2026.</span></li>
-            </ul>
-          </section>
+          {% include highlights.html %}
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}

@@ -10,3 +10,6 @@ _site
 Gemfile.lock
 vendor
 
+
+# Python validation helpers
+__pycache__/

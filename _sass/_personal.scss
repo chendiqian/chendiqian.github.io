@@ -56,3 +56,4 @@ footer.sticky-bottom { background: transparent; border-top: 1px solid var(--glob
   .recent-updates li { grid-template-columns: 1fr; gap: .15rem; }
   .profile-links { margin-bottom: 2rem; }
 }
+.recent-updates .update-text > :last-child { margin-bottom: 0; }

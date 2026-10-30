@@ -1,0 +1,13 @@
+{% if site.data.highlights.size > 0 %}
+<section class="recent-updates" aria-labelledby="updates-title">
+  <h2 id="updates-title">Recent highlights</h2>
+  <ul>
+    {% for highlight in site.data.highlights %}
+    <li>
+      <span class="update-date">{{ highlight.date | escape }}</span>
+      <div class="update-text">{{ highlight.text | markdownify }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

@@ -2,6 +2,7 @@
 layout: about
 title: About
 permalink: /
+eyebrow: Graph machine learning & optimization
 subtitle: Ph.D. student · RWTH Aachen University
 
 profile:
