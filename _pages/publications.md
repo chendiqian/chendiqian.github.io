@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: 
+title: Publications
+description: Research in graph machine learning and optimization.
 nav: true
 nav_order: 1
 ---

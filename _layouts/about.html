@@ -3,8 +3,9 @@ layout: default
 ---
 
 <!-- about.html -->
-      <div class="post">
+      <div class="post about-page">
         <header class="post-header">
+          <p class="profile-eyebrow">Graph machine learning &amp; optimization</p>
           <h1 class="post-title">
             {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
@@ -26,7 +27,7 @@ layout: default
               {% include figure.html
               path=profile_image_path
               class=profile_image_class
-              alt=page.profile.image
+              alt=page.profile.image_alt
               cache_bust=true -%}
             {% endif -%}
             {%- if page.profile.more_info %}
@@ -37,9 +38,22 @@ layout: default
           </div>
           {%- endif %}
 
-          <div class="clearfix">
+          <div class="about-introduction">
             {{ content }}
+            <nav class="profile-links" aria-label="Contact and research profiles">
+              <a class="primary-link" href="mailto:{{ site.email }}">Email me <span aria-hidden="true">↗</span></a>
+              <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/{{ site.github_username }}">GitHub <span aria-hidden="true">↗</span></a>
+            </nav>
           </div>
+
+          <section class="recent-updates" aria-labelledby="updates-title">
+            <h2 id="updates-title">Recent highlights</h2>
+            <ul>
+              <li><span class="update-date">2026</span><span>Our paper <a href="https://arxiv.org/abs/2605.07113">Solving Max-Cut to Global Optimality via Feasibility-Preserving Graph Neural Networks</a> was accepted at <strong>NeurIPS 2026</strong>.</span></li>
+              <li><span class="update-date">April 2026</span><span>Awarded <strong>Gold Reviewer</strong> at NeurIPS 2026.</span></li>
+            </ul>
+          </section>
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
@@ -55,7 +69,10 @@ layout: default
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            <div class="section-heading">
+              <h2>Selected publications</h2>
+              <a href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a>
+            </div>
             {%- include selected_papers.html %}
           {%- endif %}
 

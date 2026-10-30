@@ -98,6 +98,12 @@
   ],
   "awards": [
     {
+      "title": "Gold reviewer award of NeurIPS 2026",
+      "date": "2026-04",
+      "awarder": "NeurIPS Conference",
+      "summary": "Recognized as a NeurIPS 2026 'Gold Reviewer'."
+    },
+    {
       "title": "Top reviewer award of NeurIPS 2025",
       "date": "2025-10",
       "awarder": "NeurIPS Conference",

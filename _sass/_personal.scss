@@ -1,0 +1,58 @@
+// Personal presentation layer; shared theme and publication behavior stay intact.
+:root {
+  --global-theme-color: #087b78;
+  --global-hover-color: #065f5c;
+  --global-bg-color: #fcfcfa;
+  --global-text-color: #202e35;
+  --global-text-color-light: #59676d;
+}
+html[data-theme='dark'] {
+  --global-theme-color: #77d5c8;
+  --global-hover-color: #a1e7de;
+  --global-bg-color: #172126;
+  --global-text-color: #e5ecee;
+  --global-text-color-light: #afbec4;
+}
+body { font-size: 1rem; line-height: 1.75; }
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--global-theme-color);
+  outline-offset: 5px;
+}
+.navbar { box-shadow: none; border-bottom: 1px solid var(--global-divider-color); }
+.post-header { margin-bottom: 2rem; }
+.post-title { font-size: clamp(2.5rem, 6vw, 3.8rem); letter-spacing: -.045em; line-height: 1.12; }
+.about-page {
+  padding-top: 1.5rem;
+  .profile-eyebrow { color: var(--global-theme-color); font-size: .78rem; font-weight: 600; letter-spacing: .11em; text-transform: uppercase; margin-bottom: 1rem; }
+  .desc { color: var(--global-text-color-light); font-size: 1.12rem; margin-top: 1rem; }
+  .profile { width: 24%; margin: 0 0 2rem 3rem; }
+  .profile img { box-shadow: none !important; border: 5px solid var(--global-bg-color); outline: 1px solid var(--global-divider-color); }
+  .profile .more-info { font-family: inherit; font-size: .82rem; color: var(--global-text-color-light); text-align: center; margin-top: 1.25rem; }
+  .profile .more-info p { display: block; }
+  .about-introduction { max-width: 650px; }
+  .about-introduction > p:first-child { font-size: 1.16rem; line-height: 1.8; }
+  .about-introduction > p + p { color: var(--global-text-color-light); }
+}
+.profile-links { display: flex; flex-wrap: wrap; gap: .65rem; margin: 1.8rem 0 3rem; }
+.profile-links a { display: inline-flex; align-items: center; gap: .7rem; padding: .5rem .9rem; border: 1px solid var(--global-divider-color); border-radius: 6px; font-size: .9rem; font-weight: 500; }
+.profile-links .primary-link { background: var(--global-theme-color); border-color: var(--global-theme-color); color: var(--global-bg-color); }
+.profile-links a:hover { text-decoration: none; border-color: var(--global-theme-color); }
+.recent-updates { clear: both; border-top: 1px solid var(--global-divider-color); border-bottom: 1px solid var(--global-divider-color); padding: 1.6rem 0; margin: 2rem 0 3rem; }
+.recent-updates h2, .section-heading h2 { font-size: 1.5rem; font-weight: 500; letter-spacing: -.025em; }
+.recent-updates ul { list-style: none; padding: 0; margin: 1.1rem 0 0; }
+.recent-updates li { display: grid; grid-template-columns: 105px 1fr; gap: 1rem; margin-top: .8rem; font-size: .95rem; }
+.update-date { color: var(--global-text-color-light); font-size: .82rem; padding-top: .15rem; }
+.section-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem; }
+.section-heading a { font-size: .9rem; }
+.publications ol.bibliography > li { padding-bottom: 1.5rem; margin-bottom: 1.8rem; border-bottom: 1px solid var(--global-divider-color); }
+.publications ol.bibliography li .title { font-size: 1.05rem; line-height: 1.5; }
+.publications ol.bibliography li .preview { border-radius: 6px; }
+.publications h2.bibliography { color: var(--global-text-color-light); text-align: left; margin-bottom: 1.5rem; font-size: 1.3rem; }
+footer.sticky-bottom { background: transparent; border-top: 1px solid var(--global-divider-color); padding: 1.5rem 0; }
+@media (max-width: 575px) {
+  .about-page { padding-top: 0; }
+  .about-page .profile { float: none !important; width: 160px; margin: 0 0 2rem; }
+  .about-page .profile .more-info { text-align: left; }
+  .recent-updates li { grid-template-columns: 1fr; gap: .15rem; }
+  .profile-links { margin-bottom: 2rem; }
+}
